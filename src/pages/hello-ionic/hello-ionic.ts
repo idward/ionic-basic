@@ -160,4 +160,40 @@ export class HelloIonicPage {
     radio.present();
   }
 
+  showCheckbox() {
+    let checkbox = this.alertCtrl.create({
+      title: 'Which planets have you visited?',
+      inputs: [
+        {
+          type: 'checkbox',
+          label: 'Alderaan',
+          value: 'value1',
+          checked: true
+        },
+        {
+          type: 'checkbox',
+          label: 'Bespin',
+          value: 'value2',
+          checked: false
+        }
+      ],
+      buttons: [
+        {
+          text: 'Cancel',
+          handler: data => {
+            console.log('Cancel Clicked!', data);
+          }
+        },
+        {
+          text: 'Okay',
+          handler: data => {
+            console.log('Checkbox data:', data);
+          }
+        }
+      ]
+    });
+
+    checkbox.present();
+  }
+
 }
