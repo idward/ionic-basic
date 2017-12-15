@@ -75,4 +75,89 @@ export class HelloIonicPage {
     prompt.present();
   }
 
+  showConfirm() {
+    let confirm = this.alertCtrl.create({
+      title: 'Use this lightsaber?',
+      message: 'Do you agree to use this lightsaber to do good across the intergalactic galaxy?',
+      buttons: [
+        {
+          text: 'Disagree',
+          handler: () => {
+            console.log('Disagree clicked!');
+          }
+        },
+        {
+          text: 'Agree',
+          handler: () => {
+            console.log('Agree clicked!');
+          }
+        }
+      ]
+    });
+
+    confirm.present();
+  }
+
+  showRadio() {
+    let radio = this.alertCtrl.create({
+      title: 'Lightsaber color',
+      inputs: [
+        {
+          type: 'radio',
+          label: 'Blue',
+          value: 'blue',
+          checked: true
+        },
+        {
+          type: 'radio',
+          label: 'Red',
+          value: 'red',
+          checked: false
+        }
+      ],
+      buttons: [
+        {
+          text: 'Cancel',
+          handler: data => {
+            console.log('Cancel Clicked!', data);
+          }
+        },
+        {
+          text: 'OK',
+          handler: data => {
+            console.log('OK Clicked!', data);
+          }
+        }
+      ]
+    });
+
+    radio.present();
+  }
+
+  showRadio1() {
+    let radio = this.alertCtrl.create();
+    radio.setTitle('Lightsaber color');
+    radio.addInput({
+      type: 'radio',
+      label: 'Blue',
+      value: 'blue',
+      checked: true,
+    });
+    radio.addInput({
+      type: 'radio',
+      label: 'Red',
+      value: 'red',
+      checked: false,
+    });
+    radio.addButton('Cancel');
+    radio.addButton({
+      text: 'OK',
+      handler: data => {
+        console.log('OK Clicked', data);
+      }
+    });
+
+    radio.present();
+  }
+
 }
