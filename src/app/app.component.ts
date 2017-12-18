@@ -8,6 +8,7 @@ import {ListPage} from '../pages/list/list';
 import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {ButtonsPage} from "../pages/buttons/buttons";
+import {CardsPage} from "../pages/cards/cards";
 
 
 @Component({
@@ -30,7 +31,8 @@ export class MyApp {
     this.pages = [
       {title: 'Hello Ionic', component: HelloIonicPage},
       {title: 'My First List', component: ListPage},
-      {title: 'My Buttons', component: ButtonsPage}
+      {title: 'My Buttons', component: ButtonsPage},
+      {title: 'My Cards', component: CardsPage}
     ];
   }
 

@@ -1,0 +1,54 @@
+<!--
+  Generated template for the CardsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>cards</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!-- checkbox -->
+  <ion-item>
+    <ion-label>
+      Daenerys Targaryen
+    </ion-label>
+    <ion-checkbox checked="true" color="dark"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>
+      Arya Stark
+    </ion-label>
+    <ion-checkbox color="dark" disabled></ion-checkbox>
+  </ion-item>
+  <!-- datetime -->
+  <ion-item>
+    <ion-label>
+      Start Time
+    </ion-label>
+    <ion-datetime displayFormat="h:mm A" pickerFormat="h:mm A"></ion-datetime>
+  </ion-item>
+
+  <ion-card (tap)="tapEvent($event)">
+    <ion-item>
+      Tapped:{{tap}} times
+    </ion-item>
+  </ion-card>
+  <ion-card (press)="pressEvent($event)">
+    <ion-item>
+      Press:{{press}} times
+    </ion-item>
+  </ion-card>
+  <ion-card (swipe)="swipeEvent($event)">
+    <ion-item>
+      Swipe:{{swipe}} times
+    </ion-item>
+  </ion-card>
+
+  <ion-grid>
+    <ion-row></ion-row>
+  </ion-grid>
+</ion-content>
