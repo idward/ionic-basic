@@ -9,6 +9,8 @@ import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {ButtonsPage} from "../pages/buttons/buttons";
 import {CardsPage} from "../pages/cards/cards";
+import {InputsPage} from "../pages/inputs/inputs";
+import {LoadingPage} from "../pages/loading/loading";
 
 
 @Component({
@@ -32,7 +34,9 @@ export class MyApp {
       {title: 'Hello Ionic', component: HelloIonicPage},
       {title: 'My First List', component: ListPage},
       {title: 'My Buttons', component: ButtonsPage},
-      {title: 'My Cards', component: CardsPage}
+      {title: 'My Cards', component: CardsPage},
+      {title: 'My Inputs', component: InputsPage},
+      {title: 'My Loading', component: LoadingPage}
     ];
   }
 

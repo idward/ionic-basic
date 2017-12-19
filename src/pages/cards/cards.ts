@@ -17,11 +17,13 @@ export class CardsPage {
   tap:number;
   press:number;
   swipe:number;
+  myIcon:string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.tap = 0;
     this.press = 0;
     this.swipe = 0;
+    this.myIcon = 'home';
   }
 
   ionViewDidLoad() {

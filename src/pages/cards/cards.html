@@ -49,6 +49,22 @@
   </ion-card>
 
   <ion-grid>
-    <ion-row></ion-row>
+    <ion-row>
+      <ion-col col-12>
+        This column will take 12 columns
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6>
+        This column will take 6 columns
+      </ion-col>
+    </ion-row>
   </ion-grid>
+
+  <ion-item>
+    <ion-icon name="heart"></ion-icon>
+    <ion-icon name="heart" isActive="false"></ion-icon>
+    <ion-icon [name]="myIcon"></ion-icon>
+    <!--<ion-icon ios="logo-apple" md="log-android"></ion-icon>-->
+  </ion-item>
 </ion-content>
