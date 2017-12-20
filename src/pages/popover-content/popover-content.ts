@@ -86,7 +86,6 @@ export class PopoverContentPage {
   }
 
   changeFontFamily(){
-    debugger;
     if(this.fontFamily){
       this.textEle.style.fontFamily = this.fontFamily;
     }
