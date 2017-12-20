@@ -11,6 +11,9 @@ import {ButtonsPage} from "../pages/buttons/buttons";
 import {CardsPage} from "../pages/cards/cards";
 import {InputsPage} from "../pages/inputs/inputs";
 import {LoadingPage} from "../pages/loading/loading";
+import {ModalPage} from "../pages/modal/modal";
+import {PopoverPage} from "../pages/popover/popover";
+import {RadioPage} from "../pages/radio/radio";
 
 
 @Component({
@@ -33,15 +36,25 @@ export class MyApp {
     this.pages = [
       {title: 'Hello Ionic', component: HelloIonicPage},
       {title: 'My First List', component: ListPage},
-      {title: 'My Buttons', component: ButtonsPage},
-      {title: 'My Cards', component: CardsPage},
-      {title: 'My Inputs', component: InputsPage},
-      {title: 'My Loading', component: LoadingPage}
+      {title: 'My Popover', component: PopoverPage},
+      {title: 'My Radio', component: RadioPage}
     ];
   }
 
+  // {title: 'My Buttons', component: ButtonsPage},
+  // {title: 'My Cards', component: CardsPage},
+  // {title: 'My Inputs', component: InputsPage},
+  // {title: 'My Loading', component: LoadingPage},
+  // {title: 'My Modal', component: ModalPage},
+
+  // ngAfterViewInit(){
+  //   console.log('ngAfterViewInit....');
+  //   this.nav.push(LoadingPage);
+  // }
+
   initializeApp() {
     this.platform.ready().then(() => {
+      console.log('initial app status....');
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       this.statusBar.styleDefault();

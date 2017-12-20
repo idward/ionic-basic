@@ -10,6 +10,11 @@ import {ButtonsPage} from '../pages/buttons/buttons';
 import {CardsPage} from '../pages/cards/cards';
 import {InputsPage} from '../pages/inputs/inputs';
 import {LoadingPage} from '../pages/loading/loading';
+import {ModalPage} from '../pages/modal/modal';
+import {ModalContentPage} from '../pages/modal-content/modal-content';
+import {PopoverPage} from '../pages/popover/popover';
+import {PopoverContentPage} from '../pages/popover-content/popover-content';
+import {RadioPage} from "../pages/radio/radio";
 
 import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
@@ -23,7 +28,12 @@ import {SplashScreen} from '@ionic-native/splash-screen';
     ButtonsPage,
     CardsPage,
     InputsPage,
-    LoadingPage
+    LoadingPage,
+    ModalPage,
+    ModalContentPage,
+    PopoverPage,
+    PopoverContentPage,
+    RadioPage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +48,12 @@ import {SplashScreen} from '@ionic-native/splash-screen';
     ButtonsPage,
     CardsPage,
     InputsPage,
-    LoadingPage
+    LoadingPage,
+    ModalPage,
+    ModalContentPage,
+    PopoverPage,
+    PopoverContentPage,
+    RadioPage
   ],
   providers: [
     StatusBar,
