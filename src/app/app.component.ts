@@ -18,6 +18,7 @@ import {SegmentPage} from "../pages/segment/segment";
 import {SelectPage} from "../pages/select/select";
 import {SlidesPage} from "../pages/slides/slides";
 import {TabPage} from "../pages/tab/tab";
+import {ToastPage} from "../pages/toast/toast";
 
 @Component({
   templateUrl: 'app.html'
@@ -39,9 +40,7 @@ export class MyApp {
     this.pages = [
       {title: 'Hello Ionic', component: HelloIonicPage},
       {title: 'My First List', component: ListPage},
-      {title: 'My Select', component: SelectPage},
-      {title: 'My Slides', component: SlidesPage},
-      {title: 'My Tabs', component: TabPage}
+      {title: 'My Toast', component: ToastPage}
     ];
   }
 
@@ -53,6 +52,9 @@ export class MyApp {
   // {title: 'My Popover', component: PopoverPage},
   // {title: 'My Radio', component: RadioPage},
   // {title: 'My Segment', component: SegmentPage},
+  // {title: 'My Select', component: SelectPage},
+  // {title: 'My Slides', component: SlidesPage},
+  // {title: 'My Tabs', component: TabPage},
 
   // ngAfterViewInit(){
   //   console.log('ngAfterViewInit....');
