@@ -16,7 +16,8 @@ import {PopoverPage} from "../pages/popover/popover";
 import {RadioPage} from "../pages/radio/radio";
 import {SegmentPage} from "../pages/segment/segment";
 import {SelectPage} from "../pages/select/select";
-
+import {SlidesPage} from "../pages/slides/slides";
+import {TabPage} from "../pages/tab/tab";
 
 @Component({
   templateUrl: 'app.html'
@@ -38,7 +39,9 @@ export class MyApp {
     this.pages = [
       {title: 'Hello Ionic', component: HelloIonicPage},
       {title: 'My First List', component: ListPage},
-      {title: 'My Select', component: SelectPage}
+      {title: 'My Select', component: SelectPage},
+      {title: 'My Slides', component: SlidesPage},
+      {title: 'My Tabs', component: TabPage}
     ];
   }
 

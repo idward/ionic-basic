@@ -17,6 +17,8 @@ import {PopoverContentPage} from '../pages/popover-content/popover-content';
 import {RadioPage} from "../pages/radio/radio";
 import {SegmentPage} from "../pages/segment/segment";
 import {SelectPage} from "../pages/select/select";
+import {SlidesPage} from "../pages/slides/slides";
+import {TabPage,Tab1ContentPage,Tab2ContentPage} from  '../pages/tab/tab';
 
 import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
@@ -37,7 +39,11 @@ import {SplashScreen} from '@ionic-native/splash-screen';
     PopoverContentPage,
     RadioPage,
     SegmentPage,
-    SelectPage
+    SelectPage,
+    SlidesPage,
+    TabPage,
+    Tab1ContentPage,
+    Tab2ContentPage
   ],
   imports: [
     BrowserModule,
@@ -59,7 +65,11 @@ import {SplashScreen} from '@ionic-native/splash-screen';
     PopoverContentPage,
     RadioPage,
     SegmentPage,
-    SelectPage
+    SelectPage,
+    SlidesPage,
+    TabPage,
+    Tab1ContentPage,
+    Tab2ContentPage
   ],
   providers: [
     StatusBar,
